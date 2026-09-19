@@ -13,7 +13,7 @@
 <body>
 
 <header class="nav">
-  <a href="#top"><img src="images/eva-signature.png" alt="Eva Miller" class="nav-logo"></a>
+  <a href="#top" aria-label="Eva Miller — avaleht"><img src="images/eva-signature.png" alt="Eva Miller" class="nav-logo"></a>
   <nav class="nav-links">
     <a href="#minust">Minust</a>
     <a href="#teenused">Teenused</a>
@@ -24,12 +24,12 @@
 
 <section class="hero" id="top">
   <div class="hero-copy">
-    <div class="eyebrow">Kosmeetik · Tallinn</div>
+    <span class="eyebrow">Kosmeetik · Tallinn</span>
     <h1>Sina ise oled&nbsp;piisav&nbsp;põhjus</h1>
     <p>Sa ei pea ootama erilist sündmust, et tulla hoolitsusse. Näohooldused, ripsmed ja kulmud, pediküür ning meik — kõik ühe hoolitseva käe all, Tallinna südames.</p>
     <div class="hero-buttons">
       <a href="#kontakt" class="cta">Broneeri aeg</a>
-      <a href="#teenused" class="cta-outline">Vaata teenuseid</a>
+      <a href="#teenused" class="cta-text">Vaata teenuseid</a>
     </div>
   </div>
   <div class="hero-image">
@@ -38,60 +38,63 @@
 </section>
 
 <section class="quote">
-  <p>&ldquo;Kui mõni teenustest paneb südame natuke kiiremini põksuma, siis kirjuta mulle ja lepime kokku.&rdquo;</p>
+  <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+  <p>Kui mõni teenustest paneb südame natuke kiiremini põksuma, siis kirjuta mulle ja lepime kokku.</p>
+  <span class="quote-attr">— Eva</span>
 </section>
 
 <section class="about" id="minust">
-  <div class="about-image"><img src="images/eva-shelf.jpg" alt="Eva Miller Kosmeetik"></div>
+  <div class="about-image">
+    <img src="images/eva-shelf.jpg" alt="Eva Miller Kosmeetik">
+  </div>
   <div class="about-copy">
-    <div class="eyebrow">Minust</div>
+    <span class="eyebrow">Minust</span>
     <h2>Tere, olen Eva</h2>
     <p>Kosmeetikuna usun, et hoolitsus ei pea olema suur sündmus — see võib olla väike, igapäevane hetk enda jaoks. Tallinnas tegutsedes olen näinud, kuidas õige hooldus ja hea nõu annavad kliendile tagasi enesekindluse. Iga hooldus algab kuulamisest: mis Sinu nahale kõige rohkem head teeb, sellest lähtun.</p>
-    <div class="stats">
-      <div><div class="stat-num">2011</div><div class="stat-label">tegutseme sellest aastast</div></div>
+    <div class="stat">
+      <div class="stat-num">2011</div>
+      <div class="stat-label">tegutseme sellest aastast</div>
     </div>
   </div>
 </section>
 
 <section class="services" id="teenused">
-  <div class="section-head">
-    <div class="eyebrow">Hinnakiri</div>
-    <h2>Teenused</h2>
-  </div>
+  <span class="eyebrow center">Hinnakiri</span>
+  <h2>Teenused</h2>
   <div class="service-grid">
 
-    <div class="service-card">
+    <div class="service-group">
       <h3>Näohooldused</h3>
-      <div class="service-row"><span>Noorte näohooldus <em>· 60 min</em></span><span>50 €</span></div>
-      <div class="service-row"><span>Tasakaalustav näohooldus massaažiga <em>· 90 min</em></span><span>70 €</span></div>
-      <div class="service-row"><span>Happehooldused <em>· 60 min</em></span><span>50–120 €</span></div>
-      <div class="service-row"><span>Mesopen hooldus <em>· 75 min</em></span><span>110–130 €</span></div>
-      <div class="service-row"><span>Crystal Carboxy CO2 kiirhooldus <em>· 45 min</em></span><span>60 €</span></div>
+      <div class="service-row"><span class="name">Noorte näohooldus <em>· 60 min</em></span><span class="leader"></span><span class="price">50&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Tasakaalustav hooldus massaažiga <em>· 90 min</em></span><span class="leader"></span><span class="price">70&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Happehooldused <em>· 60 min</em></span><span class="leader"></span><span class="price">50–120&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Mesopen hooldus <em>· 75 min</em></span><span class="leader"></span><span class="price">110–130&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Crystal Carboxy CO2 <em>· 45 min</em></span><span class="leader"></span><span class="price">60&nbsp;€</span></div>
     </div>
 
-    <div class="service-card">
-      <h3>Kulmud ja ripsmed</h3>
-      <div class="service-row"><span>Kulmude värvimine ja korrigeerimine</span><span>20 €</span></div>
-      <div class="service-row"><span>Ripsmete värvimine</span><span>10 €</span></div>
-      <div class="service-row"><span>Kulmud ja ripsmed (kombo) <em>· 45 min</em></span><span>25 €</span></div>
-      <h3 class="second">Pediküür</h3>
-      <div class="service-row"><span>Klassikaline pediküür <em>· 90 min</em></span><span>45 €</span></div>
-    </div>
-
-    <div class="service-card">
-      <h3>Depilatsioonid</h3>
-      <div class="service-row"><span>Sääred</span><span>25 €</span></div>
-      <div class="service-row"><span>Jalad kogu pikkuses</span><span>45 €</span></div>
-      <div class="service-row"><span>Bikiini</span><span>45 €</span></div>
-      <div class="service-row"><span>Käed</span><span>25 €</span></div>
-      <div class="service-row"><span>Kaenlaalused</span><span>15 €</span></div>
-      <div class="service-row"><span>Ülahuul</span><span>10 €</span></div>
-    </div>
-
-    <div class="service-card">
+    <div class="service-group">
       <h3>Meik</h3>
-      <div class="service-row"><span>Professionaalne meik <em>· 60 min</em></span><span>75 €</span></div>
-      <p class="note">Sobib pidulikeks sündmusteks, pulmadeks ja fotosessioonideks. Täpsem hinnapakkumine sõltub soovist.</p>
+      <div class="service-row"><span class="name">Professionaalne meik <em>· 60 min</em></span><span class="leader"></span><span class="price">75&nbsp;€</span></div>
+      <p class="service-note">Sobib pidulikeks sündmusteks, pulmadeks ja fotosessioonideks.</p>
+      <h3 class="second">Kulmud ja ripsmed</h3>
+      <div class="service-row"><span class="name">Kulmude värvimine ja korrigeerimine</span><span class="leader"></span><span class="price">20&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Ripsmete värvimine</span><span class="leader"></span><span class="price">10&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Kulmud ja ripsmed (kombo) <em>· 45 min</em></span><span class="leader"></span><span class="price">25&nbsp;€</span></div>
+    </div>
+
+    <div class="service-group">
+      <h3>Depilatsioonid</h3>
+      <div class="service-row"><span class="name">Sääred</span><span class="leader"></span><span class="price">25&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Jalad kogu pikkuses</span><span class="leader"></span><span class="price">45&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Bikiini</span><span class="leader"></span><span class="price">45&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Käed</span><span class="leader"></span><span class="price">25&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Kaenlaalused</span><span class="leader"></span><span class="price">15&nbsp;€</span></div>
+      <div class="service-row"><span class="name">Ülahuul</span><span class="leader"></span><span class="price">10&nbsp;€</span></div>
+    </div>
+
+    <div class="service-group">
+      <h3>Pediküür</h3>
+      <div class="service-row"><span class="name">Klassikaline pediküür <em>· 90 min</em></span><span class="leader"></span><span class="price">45&nbsp;€</span></div>
     </div>
 
   </div>
@@ -99,17 +102,21 @@
 
 <section class="contact" id="kontakt">
   <div class="contact-copy">
-    <div class="eyebrow">Broneeri aeg</div>
+    <span class="eyebrow">Broneeri aeg</span>
     <h2>Lepime kokku</h2>
     <p>Kõige kiirem viis aja leppimiseks on kirjutada Facebookis — vastan seal jooksvalt.</p>
     <a href="https://www.facebook.com/share/19bhXXWCKm/" target="_blank" rel="noopener" class="cta contact-cta">Kirjuta Facebookis</a>
     <div class="contact-list">
-      <div><span class="label">Asukoht</span><span>Tallinn <span class="tbd">(täpne aadress lisandub)</span></span></div>
+      <div><span class="label">Asukoht</span><span>Tallinn <span class="tbd">(täpsustamisel)</span></span></div>
       <div><span class="label">Telefon</span><span class="tbd">lisandub</span></div>
       <div><span class="label">E-post</span><span class="tbd">lisandub</span></div>
     </div>
   </div>
-  <div class="contact-map">[Kaart lisandub, kui aadress on kinnitatud]</div>
+  <div class="contact-map">
+    <span class="corner tl" aria-hidden="true"></span>
+    <span class="corner br" aria-hidden="true"></span>
+    <p>Kaart lisandub, kui aadress on kinnitatud</p>
+  </div>
 </section>
 
 <footer class="footer">
